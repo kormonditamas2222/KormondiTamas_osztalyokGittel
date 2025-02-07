@@ -43,6 +43,18 @@ namespace Classes
             Console.WriteLine(k1);
             Console.WriteLine(k2);
         }
+		static void Urhajok()
+		{
+			Urhajo u1 = new Urhajo("Space Shuttle", 300, 3, 55);
+			Urhajo u2 = new Urhajo("SpaceY Aircraft", 1000, 12, 30);
+            Console.WriteLine(u1);
+            Console.WriteLine(u2);
+			u1.Indulas();
+			u2.Tankolas(59);
+			u2.Landolas();
+            Console.WriteLine(u1);
+			Console.WriteLine(u2);
+        }
 		static void Main(string[] args)
 		{
 			Konyvek();
@@ -50,6 +62,8 @@ namespace Classes
 			Filmek();
             Console.WriteLine();
             Karakterek();
+            Console.WriteLine();
+			Urhajok();
             Console.WriteLine();
         }
 	}
