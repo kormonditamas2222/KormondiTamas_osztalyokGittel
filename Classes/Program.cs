@@ -31,10 +31,26 @@ namespace Classes
             Console.WriteLine(f2);
 			f1.Jatszas();
         }
+		static void Karakterek()
+		{
+			Karakter k1 = new Karakter("Józsi", 32, 69, 13);
+			Karakter k2 = new Karakter("Gólya", 5);
+            Console.WriteLine(k1);
+            Console.WriteLine(k2);
+			k1.Tamadas();
+			k1.Gyogyulas(21);
+			k2.Szintlepes();
+            Console.WriteLine(k1);
+            Console.WriteLine(k2);
+        }
 		static void Main(string[] args)
 		{
 			Konyvek();
+			Console.WriteLine();
 			Filmek();
-		}
+            Console.WriteLine();
+            Karakterek();
+            Console.WriteLine();
+        }
 	}
 }
