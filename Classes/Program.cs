@@ -55,6 +55,17 @@ namespace Classes
             Console.WriteLine(u1);
 			Console.WriteLine(u2);
         }
+		static void Kuldetesek()
+		{
+			KemKuldetes k1 = new KemKuldetes("Operation Sigma", "USA", 10, 1);
+			KemKuldetes k2 = new KemKuldetes("AX001oKxJ8", "Oroszország");
+            Console.WriteLine(k1);
+            Console.WriteLine(k2);
+			k1.KuldetesInditasa();
+			k2.VeszelySzintNovelese(6);
+			k2.SikerEselyNovelese(16);
+            Console.WriteLine(k2);
+        }
 		static void Main(string[] args)
 		{
 			Konyvek();
@@ -65,6 +76,7 @@ namespace Classes
             Console.WriteLine();
 			Urhajok();
             Console.WriteLine();
+			Kuldetesek();
         }
 	}
 }
