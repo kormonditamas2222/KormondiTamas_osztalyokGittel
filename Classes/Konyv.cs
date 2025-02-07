@@ -48,7 +48,7 @@ namespace Classes
 		}
 		public override string ToString()
 		{
-			return $"{this.cim} {this.szerzo} {this.kiadasEve} {this.oldalszam} {this.ar}";
+			return $"{this.cim} {this.szerzo} {this.kiadasEve} {this.oldalszam} oldal {this.ar} Ft";
 		}
 	}
 }
